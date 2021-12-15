@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* .card-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  grid-auto-rows: 30px;
+  grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d";
+}
+.music-logo {
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+  z-index: 1;
+}
+.hero-icon {
+  grid-area: b;
+  align-self: center;
+  justify-self: center;
+  z-index: 0;
+}
+.card-summary {
+  grid-area: c;
+  align-self: center;
+  justify-self: center;
+}
+.item4 {
+  grid-area: d;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.card {
+  grid-area: 2 / 3 / 4 / 4;
+  z-index: 1;
+}
+
+.hero-icon {
+  grid-area: 2 / 3 / 4 / 4;
+  z-index: 0;
+}
+.music-logo {
+  grid-area: 2 / 3 / 4 / 4;
+  z-index: 1;
+}
+
+h2 {
+  text-align: center;
+}
+.summary {
+  grid-area: 2 / 3 / 4 / 4;
+}
